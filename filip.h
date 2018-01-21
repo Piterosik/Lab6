@@ -96,3 +96,13 @@ string filip::getUlica()
 {
 	return ulica;
 }
+
+void filip::setMiasto(string m)
+{
+	miasto = m;
+}
+
+string filip::getMiasto()
+{
+	return miasto;
+}
