@@ -1,0 +1,1 @@
+Autor Pawe³ Lewandowski
