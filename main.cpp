@@ -1,11 +1,13 @@
 #include <iostream>
-#include<Pawell641.h>
+#include"Pawell641.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    pawel osoba;
+
+    osoba.start();
 
     return 0;
 }
