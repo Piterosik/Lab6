@@ -22,6 +22,15 @@ pawel::pawel()
 {
 
 }
+
+
+
+
+
+pawel::~pawel()
+{
+
+}
 void pawel::setImie(string s)
 {
 	imie = s;
