@@ -18,6 +18,7 @@ class filip
 	public:
 		filip();
 		~filip();
+		void start();
 		void setImie(string i);
 		string getImie();
 		void setNazwisko(string n);
@@ -32,9 +33,13 @@ class filip
 		string getUlica();
 		void setMiasto(string m);
 		string getMiasto();
-}
+};
 
 filip::filip()
+{
+
+}
+filip::~filip()
 {
 
 }
@@ -107,4 +112,10 @@ void filip::setMiasto(string m)
 string filip::getMiasto()
 {
 	return miasto;
+}
+
+void filip::start()
+{
+    setImie("Filip");
+    cout << getImie();
 }
