@@ -7,21 +7,24 @@ class osoba
 		nazwa();
 		~nazwa();
 		void setImie(string s);
+		void setWiek(int w);
+		void start(string i,int w);
 		string getImie();
 }
 
-nazwa::nazwa()
-{
-
-}
 
 void Osoba::setImie(string s)
 {
 	imie = s;
 }
 
-string getImie()
+void setWiek(int w)
 {
-	return imie;
+    wiek = w;
+}
+
+void Osoba::start()
+{
+    cout<<"Imie osoby:  "<<imie<<endl<<"Wiek osoby:  "<<wiek<<endl;
 }
 
