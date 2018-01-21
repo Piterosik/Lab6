@@ -7,6 +7,7 @@ class filip
 	private:
 		string imie;
 		string nazwisko;
+		string pesel;
 		int wiek;
 	public:
 		filip();
@@ -15,6 +16,8 @@ class filip
 		string getImie();
 		void setNazwisko(string n);
 		string getNazwisko();
+		void setPesel(string p);
+		string getPesel());
 }
 
 filip::filip()
@@ -34,10 +37,21 @@ string filip::getImie()
 
 void filip::setNazwisko(string n)
 {
-	imie = n;
+	nazwisko = n;
 }
 
 string filip::getNazwisko()
 {
 	return nazwisko;
 }
+
+void filip::setPesel(string p)
+{
+	pesel = p;
+}
+
+string filip::getPesel()
+{
+	return pesel;
+}
+
