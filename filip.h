@@ -8,6 +8,7 @@ class filip
 		string imie;
 		string nazwisko;
 		string pesel;
+		string kodpocztowy;
 		int wiek;
 	public:
 		filip();
@@ -17,7 +18,9 @@ class filip
 		void setNazwisko(string n);
 		string getNazwisko();
 		void setPesel(string p);
-		string getPesel());
+		string getPesel();
+		void setKodp(string k);
+		string getKodp();
 }
 
 filip::filip()
@@ -55,3 +58,12 @@ string filip::getPesel()
 	return pesel;
 }
 
+void filip::setKodp(string k)
+{
+	kodpocztowy = k;
+}
+
+string filip::getKodp()
+{
+	return kodpocztowy;
+}
