@@ -13,6 +13,7 @@ public:
     Samochody();
     ~Samochody();
     void save(string marka,string model,int rok, float pojemnosc);
+    void read(string marka,string model,int rok, float pojemnosc);
 private:
     string marka,model;
     int rok;
@@ -29,12 +30,19 @@ private:
 
     }
 
-   void Samochody::save(string mar,string mod,int ro,float poj)
+void Samochody::save(string mar,string mod,int ro,float poj)
     {
         marka=mar;
         model=mod;
         rok = ro;
         pojemnosc = poj;
+    }
+void Samochody::read(string marka,string model,int rok,float pojemnosc)
+    {
+        cout<<"Marka: "<<marka<<endl;
+        cout<<"Model: "<<model<<endl;
+        cout<<"Rok: "<<rok<<endl;
+        cout<<"Pojemnosc: "<<pojemnosc<<endl;
     }
 
 int main()
@@ -47,6 +55,7 @@ int main()
     cout << "Hello world!" << endl;
     s1.start();
     s2.save(mar,mod,ro,poj);
+    s2.read(mar,mod,ro,poj);
 
 
     return 0;
