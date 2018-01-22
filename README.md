@@ -1,1 +1,7 @@
-Autor Pawe³ Lewandowski
+Autorzy:
+* Pawel Lewandwski
+*
+*
+*
+* Piotr Januszewski
+
