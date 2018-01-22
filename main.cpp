@@ -8,7 +8,7 @@ class Samochody
 public:
     void start()
     {
-    cout<<"Witam. Wywolane metoda start. "<<endl;
+    cout<<"\nWitam. Wywolane metoda start. \n"<<endl;
     }
     Samochody();
     ~Samochody();
@@ -39,7 +39,7 @@ void Samochody::save(string mar,string mod,int ro,float poj)
     }
 void Samochody::read(string marka,string model,int rok,float pojemnosc)
     {
-        cout<<"Marka: "<<marka<<endl;
+        cout<<"\nMarka: "<<marka<<endl;
         cout<<"Model: "<<model<<endl;
         cout<<"Rok: "<<rok<<endl;
         cout<<"Pojemnosc: "<<pojemnosc<<endl;
@@ -52,7 +52,14 @@ int main()
 	float poj;
     Samochody s1;
     Samochody s2;
-    cout << "Hello world!" << endl;
+    cout << "\nWitaj! \nPodaj marke auta: ";
+    cin>>mar;
+    cout<<"Podaj model: ";
+    cin>>mod;
+    cout<<"Podaj rok auta: ";
+    cin>>ro;
+    cout<<"Podaj pojemnosc(ccm): ";
+    cin>>poj;
     s1.start();
     s2.save(mar,mod,ro,poj);
     s2.read(mar,mod,ro,poj);
