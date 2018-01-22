@@ -1,4 +1,5 @@
 Autorzy:
+* Pawel Lewandwski
 *
 *
 * 
