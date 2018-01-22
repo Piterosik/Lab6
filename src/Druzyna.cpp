@@ -1,57 +1,55 @@
 #include "Druzyna.h"
 
-Druzyna::Druzyna(){//konstruktor
-}
-Druzyna::Druzyna(){ //destruktor
-}
-
-void Druzyna::Start()
-{
-    cout << "Nazwa druzyny: " << _nazwa << endl;
-    cout << "Wynik " << _nazwa << " " << _wynik << endl;
-    cout << "W druzynie " << _nazwa << " gra " << _liczbaZawodnikow << "zawodnikow" << endl;
-}
-
 void Druzyna::podajLiczbeZawodnikow()
 {
     short zawodnicy;
     cout << "Podaj liczbe zawodnikow!" << endl;
-    cin >> nazwa;
-    _liczbaZawodnikow=zawodnicy;
+    cin >> zawodnicy;
+    liczbaZawodnikow=zawodnicy;
 }
 
 void Druzyna::policzWynik()
 {
-    _wynik=0
-    for (int i=0; i<3; i++)
+    wynik=0;
+    for (int j=0; j<3; j++)
     {
-        if (_wynikiWlasne[i]>_wynikiPrzeciwnikow[i])
-            _wynik+=3;
-        else if (_wynikiWlasne[i]==_wynikiPrzeciwnikow[i])
-            _wynik+=1;
+        if (wynikiWlasne[j]>wynikiPrzeciwnikow[j])
+            wynik+=3;
+        else if (wynikiWlasne[j]==wynikiPrzeciwnikow[j])
+            wynik+=1;
         else
-            _wynik+=0;
+            wynik+=0;
     }
 }
-
-void Druzyna::podajWynikiMeczów()
+void Druzyna::podajWynikiMeczow()
 {
     for (int i=0; i<3; i++)
     {
         cout << "Podaj wyniki " << i+1 << ". meczu!" << endl;
         cout << "Wynik druzyny: ";
-        cin >> _wynikiW³asne[i];
+        cin >> wynikiWlasne[i];
         cout << endl;
-        cout << "Wynik przeciwnikow: ";
-        cin >> _wynikiPrzeciwnik[i];
+        cout << "Wynik przeciwnika: ";
+        cin >> wynikiPrzeciwnikow[i];
         cout << endl;
     }
 }
 
 void Druzyna::podajNazwe()
 {
-    string nazwa;
+    string wpisz;
     cout << "Podaj nazwe druzyny!" << endl;
-    getline(cin.nazwa);
-    _nazwa=nazwa;
+    cin >> wpisz;
+    nazwa=wpisz;
+}
+
+void Druzyna::Start()
+{
+    Druzyna::podajNazwe();
+    Druzyna::podajLiczbeZawodnikow();
+    Druzyna::podajWynikiMeczow();
+    Druzyna::policzWynik();
+    cout << "Nazwa druzyny: " << nazwa << endl;
+    cout << "Wynik " << nazwa << " " << wynik << endl;
+    cout << "W druzynie " << nazwa << " gra " << liczbaZawodnikow << " zawodnikow" << endl;
 }
