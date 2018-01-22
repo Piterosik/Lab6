@@ -12,7 +12,11 @@ Statek::~Statek()
 
 void Statek::Start()
 {
+    setNazwa("Stateczek123");
 
+    std::cout << "To jest statek.\n";
+    std::cout << "Jest bardzo duzy, ma az: " << getSize() " m!!" << endl;
+    std::cout << "A jego nazwa to: " << getNazwa() << "!!" << endl;
 
 }
 
@@ -28,6 +32,10 @@ void Statek::setModel(std::string m)
     _model = m;
 }
 
+void Statek::setSize(int s)
+{
+    _dlugosc = s;
+}
 /*****************SET***********/
  std::string Statek::getNazwa()
  {
@@ -37,4 +45,9 @@ void Statek::setModel(std::string m)
  std::string Statek::getModel()
  {
      return _model;
+ }
+
+ int Statek::getSize()
+ {
+     return _dlugosc;
  }

@@ -1,10 +1,15 @@
 #include <iostream>
 
+#include "Statek.h"
+
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Statek statek;
+
+
+    statek.Start();
 
     return 0;
 }
