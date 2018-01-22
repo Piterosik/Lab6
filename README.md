@@ -1,1 +1,6 @@
-autor: Filippo
+Autorzy:
+*
+*
+* 
+* Filip Witczak
+* Piotr Januszewski
