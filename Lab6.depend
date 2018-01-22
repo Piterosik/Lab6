@@ -1,5 +1,15 @@
 # depslib dependency file v1.0
-1516642053 source:e:\git_project\lab6\main.cpp
+1516643856 source:e:\git_project\lab6\main.cpp
 	<iostream>
 	<string>
+	"Samochody.h"
+
+1516644087 e:\git_project\lab6\samochody.h
+	<iostream>
+	<string>
+
+1516643953 source:e:\git_project\lab6\samochody.cpp
+	<iostream>
+	<string>
+	"Samochody.h"
 
