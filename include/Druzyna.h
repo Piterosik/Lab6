@@ -12,7 +12,7 @@ public:
     short wynikiWlasne[3];
     short wynikiPrzeciwnikow[3];
     void policzWynik();
-    void podajWynikiMeczów();
+    void podajWynikiMeczow();
     void podajLiczbeZawodnikow();
     void Start();
     void podajNazwe();
