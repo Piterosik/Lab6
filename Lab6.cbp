@@ -33,6 +33,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="filip.h" />
 		<Unit filename="include/Statek.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Statek.cpp" />
