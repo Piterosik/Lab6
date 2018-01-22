@@ -60,6 +60,9 @@ int main()
 	float poj;
     Samochody s1;
     Samochody s2;
+
+    s1.read(mar,mod,ro,poj);
+
     cout << "\nWitaj! \nPodaj marke auta: ";
     cin>>mar;
     cout<<"Podaj model: ";
