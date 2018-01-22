@@ -2,6 +2,7 @@
 #define DRUZYNA_H_INCLUDED
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -14,9 +15,11 @@ public:
     void podajWynikiMeczów();
     void podajLiczbeZawodnikow();
     void Start();
+    void podajNazwe();
 private:
     short wynik;
     short liczbaZawodnikow;
+    string nazwa;
 };
 
 #endif // DRUZYNA_H_INCLUDED
