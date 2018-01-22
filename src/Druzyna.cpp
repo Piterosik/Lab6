@@ -7,11 +7,16 @@ Druzyna::Druzyna(){ //destruktor
 
 void Druzyna::Start()
 {
-
+    cout << "Nazwa druzyny: " << _nazwa << endl;
+    cout << "Wynik " << _nazwa << " " << _wynik << endl;
+    cout << "W druzynie " << _nazwa << " gra " << _liczbaZawodnikow << "zawodnikow" << endl;
 }
 
-void Druzyna::podajLiczbeZawodnikow(short zawodnicy)
+void Druzyna::podajLiczbeZawodnikow()
 {
+    short zawodnicy;
+    cout << "Podaj liczbe zawodnikow!" << endl;
+    cin >> nazwa;
     _liczbaZawodnikow=zawodnicy;
 }
 
@@ -41,4 +46,12 @@ void Druzyna::podajWynikiMeczów()
         cin >> _wynikiPrzeciwnik[i];
         cout << endl;
     }
+}
+
+void Druzyna::podajNazwe()
+{
+    string nazwa;
+    cout << "Podaj nazwe druzyny!" << endl;
+    getline(cin.nazwa);
+    _nazwa=nazwa;
 }
