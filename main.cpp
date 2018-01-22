@@ -11,6 +11,7 @@ public:
     cout<<"\nWitam. Wywolane metoda start. \n"<<endl;
     }
     Samochody();
+    Samochody(string marka,string model,int rok, float pojemnosc);
     ~Samochody();
     void save(string marka,string model,int rok, float pojemnosc);
     void read(string marka,string model,int rok, float pojemnosc);
@@ -28,6 +29,13 @@ private:
     Samochody::~Samochody()
     {
 
+    }
+    Samochody::Samochody(string marka,string model,int rok, float pojemnosc)
+    {
+    marka="Renault";
+    model="Clio";
+    rok='2001';
+    pojemnosc='1149';
     }
 
 void Samochody::save(string mar,string mod,int ro,float poj)
