@@ -3,6 +3,7 @@
 #include"Pawell641.h"
 #include "filip.h"
 #include "Statek.h"
+#include "Druzyna.h"
 
 
 using namespace std;
@@ -18,6 +19,9 @@ int main()
 
     Statek statek;
     statek.Start();
+    
+    Druzyna druzyna;
+    druzyna.Start();
 
 
     return 0;
